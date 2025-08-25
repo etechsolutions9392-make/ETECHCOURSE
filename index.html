@@ -1249,7 +1249,7 @@
                     title: 'Advanced IoT Development',
                     description: 'Master the Internet of Things with advanced development techniques, cloud integration, data analytics, and security best practices.',
                     image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
-                    price: 499.00,
+                    price: 49900,
                     totalDays: 30, // New: Total days for the course
                     content: `
                         <h4 class="text-xl font-bold mb-4">30-Day Learning Agenda: AI for Robotics</h4>
@@ -1734,7 +1734,7 @@
                                     <button data-course-id="${course.id}" class="view-course-btn w-full btn-secondary font-bold py-2 px-4 rounded-full mt-4">View Course</button>
                                 </div>` :
                                 `<button data-course-id="${course.id}" data-course-price="${course.price}" class="buy-course-btn w-full btn-primary font-bold py-2 px-4 rounded-full">
-                                    Buy Now - ₹${(course.price).toFixed(2)}
+                                    Buy Now - ₹${(course.price)}
                                 </button>`
                             }
                         </div>`;
@@ -1802,7 +1802,7 @@
                             <h4 class="text-2xl font-bold mb-2">Course Not Purchased</h4>
                             <p class="text-gray-700 mb-4">You need to purchase this course to access its content.</p>
                             <button data-course-id="${courseId}" data-course-price="${course.price}" class="buy-course-modal-btn btn-primary font-bold py-2 px-4 rounded-full">
-                                Buy Now - ₹${(course.price).toFixed(2)}
+                                Buy Now - ₹${(course.price)}
                             </button>
                         </div>
                     `;
@@ -6388,4 +6388,5 @@ else if (lowerCommand.includes('qualifications') || lowerCommand.includes('exper
 </body>
 
 </html>
+
 
